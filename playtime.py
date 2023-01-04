@@ -1,2 +1,7 @@
-import os
-print("I wanna eat some", type(os.getenv("FOO")))
+d = ["Lorem feiufhe",
+ "BELIAL SHJSlSIO",
+ "DIOEJoIJ"
+ ]
+
+
+print(''.join(d))
