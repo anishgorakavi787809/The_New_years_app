@@ -4,7 +4,7 @@ import openai
 import os
 from pydantic import BaseModel
 
-openai.api_key = "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"
+openai.api_key = os.environ["OPENAI_KEY"]
 app = FastAPI()
 model_engine = "text-davinci-003"
 
@@ -29,4 +29,4 @@ async def asker(arg:Proquest):
 
     return {"He said": prompter.choices[0]["text"]}
 
-uvicorn.run(app, port=80,host="0.0.0.0")
+uvicorn.run(app, port=443,host="0.0.0.0")
